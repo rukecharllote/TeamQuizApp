@@ -44,7 +44,7 @@
             this.answerButton1.TabIndex = 0;
             this.answerButton1.Text = "1";
             this.answerButton1.UseVisualStyleBackColor = true;
-            this.answerButton1.Click += new System.EventHandler(this.button1_Click);
+            this.answerButton1.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // answerButton2
             // 
@@ -54,7 +54,7 @@
             this.answerButton2.TabIndex = 1;
             this.answerButton2.Text = "2";
             this.answerButton2.UseVisualStyleBackColor = true;
-            this.answerButton2.Click += new System.EventHandler(this.button2_Click);
+            this.answerButton2.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // answerButton3
             // 
@@ -64,7 +64,7 @@
             this.answerButton3.TabIndex = 2;
             this.answerButton3.Text = "3";
             this.answerButton3.UseVisualStyleBackColor = true;
-            this.answerButton3.Click += new System.EventHandler(this.button3_Click);
+            this.answerButton3.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // answerButton4
             // 
@@ -74,7 +74,7 @@
             this.answerButton4.TabIndex = 3;
             this.answerButton4.Text = "4";
             this.answerButton4.UseVisualStyleBackColor = true;
-            this.answerButton4.Click += new System.EventHandler(this.button4_Click);
+            this.answerButton4.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // logListBox
             // 

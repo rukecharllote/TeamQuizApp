@@ -54,5 +54,11 @@ namespace TeamQuizApp
             current = loader.GetRandomQuestion();
             ui.ShowQuestion(current);
         }
+        private void LoadNextQuestion()
+        {
+            current = loader.GetRandomQuestion();
+            ui.ShowQuestion(current);
+        }
+
     }
 }

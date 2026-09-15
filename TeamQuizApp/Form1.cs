@@ -37,10 +37,19 @@ namespace TeamQuizApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void answerButton_Click(object sender, EventArgs e)
+        {
             var btn = sender as Button;
-            int index = Array.IndexOf(new[] { answerButton1, answerButton2, answerButton3, answerButton4 }, btn);
+
+            int index = Array.IndexOf(
+                new[] { answerButton1, answerButton2, answerButton3, answerButton4 },
+                btn);
 
             bool result = checker.CheckAnswer(current, index);
+
             score.Record(result);
 
             ui.LogResult(result ? "正解！" : "不正解...");
@@ -49,16 +58,12 @@ namespace TeamQuizApp
             LoadNextQuestion();
         }
 
-        private void answerButton_Click(object sender, EventArgs e)
-        {
-            current = loader.GetRandomQuestion();
-            ui.ShowQuestion(current);
-        }
         private void LoadNextQuestion()
         {
             current = loader.GetRandomQuestion();
             ui.ShowQuestion(current);
         }
+    }
 
     }
 }

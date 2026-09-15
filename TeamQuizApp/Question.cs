@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TeamQuizApp
 {
-    internal class Question
+    public class Question
     {
+        public string Text { get; set; } = "";
+        public string[] Choices { get; set; } = new string[4];
+        public int CorrectIndex { get; set; }
     }
+
 }

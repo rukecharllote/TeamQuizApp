@@ -22,3 +22,23 @@ C#で繰り返し処理に使えるキーワードは？,if,for,switch,class,1
 水が標準気圧で凍る温度は？,0℃,10℃,-10℃,100℃,0
 Unityで物理演算に適した一定間隔で呼ばれるメソッドは？,Update,LateUpdate,FixedUpdate,PhysicsUpdate,2
 C#で真偽値を扱う型は？,int,string,float,bool,3
+日本で最も大きい湖は？,琵琶湖,霞ヶ浦,浜名湖,十和田湖,0
+日本の都道府県はいくつある？,43,45,47,49,2
+地球の衛星は？,太陽,月,火星,金星,1
+世界で最も高い山は？,富士山,キリマンジャロ,エベレスト,マッキンリー,2
+植物が光を利用して栄養を作る働きは？,呼吸,蒸散,発酵,光合成,3
+C#でクラスを定義するときに使うキーワードは？,class,object,new,struct,0
+C#でオブジェクトを生成するときに使うキーワードは？,create,new,make,instance,1
+C#でメソッドから値を返すときに使うキーワードは？,break,return,continue,send,1
+C#で配列の要素数を取得するプロパティは？,Size,Count,Length,Number,2
+C#で「等しいか」を比較する演算子は？,=,==,!=,>=,1
+C#で論理積（AND）を表す演算子は？,||,&&,==,++,1
+C#で1行コメントを書くときに使う記号は？,//,/*,#,--,0
+Windows Formsでボタンがクリックされたときに発生する代表的なイベントは？,Load,Click,Change,Update,1
+Windows Formsでラベルに表示する文字列を設定するプロパティは？,Name,Value,Text,Label,2
+Windows Formsでコントロールを使用不可にするためのプロパティは？,Visible,Enabled,Locked,Active,1
+Unityでゲームオブジェクトに付ける機能単位を一般に何と呼ぶ？,Component,Scene,Project,Package,0
+Unityでオブジェクトの位置・回転・拡大縮小を管理するコンポーネントは？,Rigidbody,Collider,Transform,Animator,2
+Unityで衝突判定に使用するコンポーネントは？,Camera,Collider,AudioSource,Canvas,1
+コンピューターのCPUが主に担当するものは？,演算と制御,長期的なデータ保存,画面への映像出力のみ,音声の録音のみ,0
+URLの「HTTP」が表すものは？,プログラミング言語,画像形式,通信プロトコル,データベース,2

@@ -125,6 +125,9 @@ namespace TeamQuizApp
 
             // 最終結果
             ui.LogResult("最終結果：" + score.GetResult());
+
+            // 累計結果の表示を追加
+            totalCurrentList.Items.Add($"累計{score.GetResult()}");
         }
 
         private void retryButton_Click(object sender, EventArgs e)

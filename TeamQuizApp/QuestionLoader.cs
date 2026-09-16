@@ -31,7 +31,12 @@ namespace TeamQuizApp
         public Question GetRandomQuestion()
         {
             int idx = _rand.Next(_questions.Count);
-            return _questions[idx];
+
+            Question question = _questions[idx];
+
+            _questions.RemoveAt(idx);
+
+            return question;
         }
     }
 }

@@ -34,6 +34,7 @@
             this.answerButton4 = new System.Windows.Forms.Button();
             this.logListBox = new System.Windows.Forms.ListBox();
             this.questionLabel = new System.Windows.Forms.Label();
+            this.retryButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // answerButton1
@@ -94,11 +95,22 @@
             this.questionLabel.TabIndex = 5;
             this.questionLabel.Text = "問題";
             // 
+            // retryButton
+            // 
+            this.retryButton.Location = new System.Drawing.Point(1444, 78);
+            this.retryButton.Name = "retryButton";
+            this.retryButton.Size = new System.Drawing.Size(240, 69);
+            this.retryButton.TabIndex = 6;
+            this.retryButton.Text = "もう一回";
+            this.retryButton.UseVisualStyleBackColor = true;
+            this.retryButton.Click += new System.EventHandler(this.retryButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1874, 833);
+            this.Controls.Add(this.retryButton);
             this.Controls.Add(this.questionLabel);
             this.Controls.Add(this.logListBox);
             this.Controls.Add(this.answerButton4);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button answerButton4;
         private System.Windows.Forms.ListBox logListBox;
         private System.Windows.Forms.Label questionLabel;
+        private System.Windows.Forms.Button retryButton;
     }
 }
 

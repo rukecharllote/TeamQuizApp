@@ -22,5 +22,12 @@ namespace TeamQuizApp
             if (TotalCount == 0) return "正解数: 0 / 0 （正答率 0.0%）";
             return $"正解数: {CorrectCount} / {TotalCount} （正答率 {((double)CorrectCount / TotalCount * 100):F1}%）";
         }
+
+        public void Reset()
+        {
+            CorrectCount = 0;
+            TotalCount = 0;
+        }
     }
+
 }

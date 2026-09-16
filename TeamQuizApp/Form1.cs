@@ -55,6 +55,12 @@ namespace TeamQuizApp
 
         }
 
+        // 画像の初期値
+        private void ShowPicture()
+        {
+            picture.Image = Properties.Resources._01Default;
+        }
+
         private void answerButton_Click(object sender, EventArgs e)
         {
             var btn = sender as Button;
@@ -76,6 +82,16 @@ namespace TeamQuizApp
             // 結果表示
             ui.LogResult(result ? "正解！" : "不正解...");
             ui.LogResult(score.GetResult());
+
+            // 結果に応じて画像が変わる
+            if (result)
+            {
+                picture.Image = Properties.Resources._02Good;
+            }
+            else
+            {
+                picture.Image = Properties.Resources._03Bad;
+            }
 
             // 5問回答したら終了
             if (questionCount >= MaxQuestions)

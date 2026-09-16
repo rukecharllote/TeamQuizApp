@@ -35,13 +35,16 @@
             this.logListBox = new System.Windows.Forms.ListBox();
             this.questionLabel = new System.Windows.Forms.Label();
             this.retryButton = new System.Windows.Forms.Button();
+            this.picture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // answerButton1
             // 
-            this.answerButton1.Location = new System.Drawing.Point(307, 610);
+            this.answerButton1.Location = new System.Drawing.Point(246, 508);
+            this.answerButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.answerButton1.Name = "answerButton1";
-            this.answerButton1.Size = new System.Drawing.Size(238, 82);
+            this.answerButton1.Size = new System.Drawing.Size(190, 68);
             this.answerButton1.TabIndex = 0;
             this.answerButton1.Text = "1";
             this.answerButton1.UseVisualStyleBackColor = true;
@@ -49,9 +52,10 @@
             // 
             // answerButton2
             // 
-            this.answerButton2.Location = new System.Drawing.Point(642, 610);
+            this.answerButton2.Location = new System.Drawing.Point(514, 508);
+            this.answerButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.answerButton2.Name = "answerButton2";
-            this.answerButton2.Size = new System.Drawing.Size(238, 82);
+            this.answerButton2.Size = new System.Drawing.Size(190, 68);
             this.answerButton2.TabIndex = 1;
             this.answerButton2.Text = "2";
             this.answerButton2.UseVisualStyleBackColor = true;
@@ -59,9 +63,10 @@
             // 
             // answerButton3
             // 
-            this.answerButton3.Location = new System.Drawing.Point(979, 610);
+            this.answerButton3.Location = new System.Drawing.Point(783, 508);
+            this.answerButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.answerButton3.Name = "answerButton3";
-            this.answerButton3.Size = new System.Drawing.Size(238, 82);
+            this.answerButton3.Size = new System.Drawing.Size(190, 68);
             this.answerButton3.TabIndex = 2;
             this.answerButton3.Text = "3";
             this.answerButton3.UseVisualStyleBackColor = true;
@@ -69,9 +74,10 @@
             // 
             // answerButton4
             // 
-            this.answerButton4.Location = new System.Drawing.Point(1309, 610);
+            this.answerButton4.Location = new System.Drawing.Point(1047, 508);
+            this.answerButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.answerButton4.Name = "answerButton4";
-            this.answerButton4.Size = new System.Drawing.Size(238, 82);
+            this.answerButton4.Size = new System.Drawing.Size(190, 68);
             this.answerButton4.TabIndex = 3;
             this.answerButton4.Text = "4";
             this.answerButton4.UseVisualStyleBackColor = true;
@@ -80,36 +86,50 @@
             // logListBox
             // 
             this.logListBox.FormattingEnabled = true;
-            this.logListBox.ItemHeight = 18;
-            this.logListBox.Location = new System.Drawing.Point(583, 233);
+            this.logListBox.ItemHeight = 15;
+            this.logListBox.Location = new System.Drawing.Point(466, 194);
+            this.logListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logListBox.Name = "logListBox";
-            this.logListBox.Size = new System.Drawing.Size(690, 274);
+            this.logListBox.Size = new System.Drawing.Size(553, 229);
             this.logListBox.TabIndex = 4;
             // 
             // questionLabel
             // 
             this.questionLabel.AutoSize = true;
-            this.questionLabel.Location = new System.Drawing.Point(580, 156);
+            this.questionLabel.Location = new System.Drawing.Point(464, 130);
+            this.questionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.questionLabel.Name = "questionLabel";
-            this.questionLabel.Size = new System.Drawing.Size(44, 18);
+            this.questionLabel.Size = new System.Drawing.Size(37, 15);
             this.questionLabel.TabIndex = 5;
             this.questionLabel.Text = "問題";
             // 
             // retryButton
             // 
-            this.retryButton.Location = new System.Drawing.Point(1444, 78);
+            this.retryButton.Location = new System.Drawing.Point(1155, 65);
+            this.retryButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.retryButton.Name = "retryButton";
-            this.retryButton.Size = new System.Drawing.Size(240, 69);
+            this.retryButton.Size = new System.Drawing.Size(192, 58);
             this.retryButton.TabIndex = 6;
             this.retryButton.Text = "もう一回";
             this.retryButton.UseVisualStyleBackColor = true;
             this.retryButton.Click += new System.EventHandler(this.retryButton_Click);
             // 
+            // picture
+            // 
+            this.picture.Image = global::TeamQuizApp.Properties.Resources._01Default;
+            this.picture.Location = new System.Drawing.Point(1132, 183);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(240, 240);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture.TabIndex = 7;
+            this.picture.TabStop = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1874, 833);
+            this.ClientSize = new System.Drawing.Size(1499, 694);
+            this.Controls.Add(this.picture);
             this.Controls.Add(this.retryButton);
             this.Controls.Add(this.questionLabel);
             this.Controls.Add(this.logListBox);
@@ -117,9 +137,11 @@
             this.Controls.Add(this.answerButton3);
             this.Controls.Add(this.answerButton2);
             this.Controls.Add(this.answerButton1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "クイズアプリ";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +156,7 @@
         private System.Windows.Forms.ListBox logListBox;
         private System.Windows.Forms.Label questionLabel;
         private System.Windows.Forms.Button retryButton;
+        private System.Windows.Forms.PictureBox picture;
     }
 }
 

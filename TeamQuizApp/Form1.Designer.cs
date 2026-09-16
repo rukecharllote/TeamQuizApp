@@ -36,13 +36,14 @@
             this.questionLabel = new System.Windows.Forms.Label();
             this.retryButton = new System.Windows.Forms.Button();
             this.picture = new System.Windows.Forms.PictureBox();
+            this.totalCurrentList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // answerButton1
             // 
             this.answerButton1.Location = new System.Drawing.Point(246, 508);
-            this.answerButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.answerButton1.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton1.Name = "answerButton1";
             this.answerButton1.Size = new System.Drawing.Size(190, 68);
             this.answerButton1.TabIndex = 0;
@@ -53,7 +54,7 @@
             // answerButton2
             // 
             this.answerButton2.Location = new System.Drawing.Point(514, 508);
-            this.answerButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.answerButton2.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton2.Name = "answerButton2";
             this.answerButton2.Size = new System.Drawing.Size(190, 68);
             this.answerButton2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // answerButton3
             // 
             this.answerButton3.Location = new System.Drawing.Point(783, 508);
-            this.answerButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.answerButton3.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton3.Name = "answerButton3";
             this.answerButton3.Size = new System.Drawing.Size(190, 68);
             this.answerButton3.TabIndex = 2;
@@ -75,7 +76,7 @@
             // answerButton4
             // 
             this.answerButton4.Location = new System.Drawing.Point(1047, 508);
-            this.answerButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.answerButton4.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton4.Name = "answerButton4";
             this.answerButton4.Size = new System.Drawing.Size(190, 68);
             this.answerButton4.TabIndex = 3;
@@ -88,7 +89,7 @@
             this.logListBox.FormattingEnabled = true;
             this.logListBox.ItemHeight = 15;
             this.logListBox.Location = new System.Drawing.Point(466, 194);
-            this.logListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logListBox.Margin = new System.Windows.Forms.Padding(2);
             this.logListBox.Name = "logListBox";
             this.logListBox.Size = new System.Drawing.Size(553, 229);
             this.logListBox.TabIndex = 4;
@@ -106,7 +107,7 @@
             // retryButton
             // 
             this.retryButton.Location = new System.Drawing.Point(1155, 65);
-            this.retryButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retryButton.Margin = new System.Windows.Forms.Padding(2);
             this.retryButton.Name = "retryButton";
             this.retryButton.Size = new System.Drawing.Size(192, 58);
             this.retryButton.TabIndex = 6;
@@ -124,11 +125,21 @@
             this.picture.TabIndex = 7;
             this.picture.TabStop = false;
             // 
+            // totalCurrentList
+            // 
+            this.totalCurrentList.FormattingEnabled = true;
+            this.totalCurrentList.ItemHeight = 15;
+            this.totalCurrentList.Location = new System.Drawing.Point(58, 194);
+            this.totalCurrentList.Name = "totalCurrentList";
+            this.totalCurrentList.Size = new System.Drawing.Size(293, 229);
+            this.totalCurrentList.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1499, 694);
+            this.Controls.Add(this.totalCurrentList);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.retryButton);
             this.Controls.Add(this.questionLabel);
@@ -137,7 +148,7 @@
             this.Controls.Add(this.answerButton3);
             this.Controls.Add(this.answerButton2);
             this.Controls.Add(this.answerButton1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "クイズアプリ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -157,6 +168,7 @@
         private System.Windows.Forms.Label questionLabel;
         private System.Windows.Forms.Button retryButton;
         private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.ListBox totalCurrentList;
     }
 }
 
